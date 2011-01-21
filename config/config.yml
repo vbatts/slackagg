@@ -5,7 +5,7 @@
 
 common:
   # Change the secret to protect your site from DoS attack
-  secret: 8_2BGh0
+  secret: 0gvMp6Fd
   # The array of feeds you want to aggregate. If you change this then manually delete the whole cache.
   feeds:
    - http://slackbuilds.org/rss/ChangeLog.rss

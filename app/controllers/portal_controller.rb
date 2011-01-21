@@ -29,9 +29,16 @@ private
   def cache_feeds
     puts "Caching feeds... (can be slow)"
     feeds = Conf.feeds.map do |uri|
-      feed = FeedTools::Feed.open( uri )
-      { :uri => uri, :title => feed.title, 
-        :items => feed.items.map { |item| {:title => item.title, :author => item.author.name, :published => item.published, :link => item.link} } }
+      # silly to need this, but if the feed fails to fetch,
+      # don't kill the ruby thread ...
+      begin
+        feed = FeedTools::Feed.open( uri )
+        { :uri => uri, :title => feed.title, 
+          :items => feed.items.map { |item| { :title => item.title, :author => item.author.name, :published => item.published, :link => item.link } } }
+      rescue FeedTools::FeedAccessError
+        puts uri
+        next
+      end
     end
     feeds.each { |feed|
       new = CachedFeed.find_or_initialize_by_uri( feed[:uri] )
