@@ -16,6 +16,13 @@ class PortalController < ApplicationController
       @aggregate = read_cache unless read_fragment({})
     end
   end
+
+  def method_missing(methodname, *args)
+    @methodname = methodname
+    @args = args
+    render '404', :status => 404
+  end
+
   
 private
   # This will replace cached feeds in the DB that have the same URI. Be careful not to tie up the DB connection.

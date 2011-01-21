@@ -7,7 +7,7 @@
 /*
  * Layout
  ***************************/
-div#container { background: url('/images/background/slackware_traditional_website_logo.png') no-repeat top center; }
+div#container { background: url('/images/invisible.gif') repeat top center; }
 div#content { position:absolute; left:219px; top:212px; width:505px; }
 div#right-rail { position:absolute; left: 765px; top:235px; width:160px; background:white; }
 div#footer { text-align: left; }

@@ -8,9 +8,9 @@
 
 body { top: 0;  margin:0; }
 div#container { position: relative; width: 950px; height: 700px; margin: 0 auto; }
-a#home-button { position:absolute; left:21px; top:19px; width:232px; height:129px; }
-div#semacode-search { position:absolute; left:765px; top:28px; width:100px; height:20px; }
-div#semacode-search input { background: none; border: none; font: 11px Arial, sans-serif; color: rgb(76,76,76); }
+a#home-button { position:absolute; left:21px; top:19px; width:260px; height:66px; }
+div#slackware-search { position:absolute; background: #C3C3C3; left:765px; top:28px; width:100px; height:20px; }
+div#slackware-search input { background: none; border: none; font: 11px Arial, sans-serif; color: rgb(76,76,76); }
 
 div#footer { clear: both; text-align: center; font-size: 11px; color: #777; padding-top: 40px; padding-bottom: 40px; }
 div#footer p { margin: 0; padding: 0; }
