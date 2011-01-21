@@ -24,7 +24,7 @@ private
     feeds = Conf.feeds.map do |uri|
       feed = FeedTools::Feed.open( uri )
       { :uri => uri, :title => feed.title, 
-        :items => feed.items.map { |item| {:title => item.title, :published => item.published, :link => item.link} } }
+        :items => feed.items.map { |item| {:title => item.title, :author => item.author.name, :published => item.published, :link => item.link} } }
     end
     feeds.each { |feed|
       new = CachedFeed.find_or_initialize_by_uri( feed[:uri] )

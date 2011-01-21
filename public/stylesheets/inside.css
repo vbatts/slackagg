@@ -7,7 +7,7 @@
 /*
  * Layout
  ***************************/
-div#container { background: url('/images/background/header.png') no-repeat top center; }
+div#container { background: url('/images/background/slackware_traditional_website_logo.png') no-repeat top center; }
 div#content { position:absolute; left:219px; top:212px; width:505px; }
 div#right-rail { position:absolute; left: 765px; top:235px; width:160px; background:white; }
 div#footer { text-align: left; }
@@ -28,8 +28,8 @@ div.item_content pre {
 }
 div.item_details {
   float:left;
-  width:170px;
-  margin-left:-180px;
+  width:175px;
+  margin-left:-185px;
 }
 .item_tags {
   clear: both;

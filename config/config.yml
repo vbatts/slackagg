@@ -8,21 +8,21 @@ common:
   secret: 8_2BGh0
   # The array of feeds you want to aggregate. If you change this then manually delete the whole cache.
   feeds:
-   - http://simonwoodside.com/posts/rss
-   - http://simonwoodside.com/comments/rss
-   - http://semacode.com/posts/rss
-   - http://api.flickr.com/services/feeds/photos_public.gne?id=20938094@N00&lang=en-us&format=rss_200
-   - http://api.flickr.com/services/feeds/activity.gne?user_id=20938094@N00
-   - http://twitter.com/statuses/user_timeline/9182402.rss
+   - http://slackbuilds.org/rss/ChangeLog.rss
+   - http://connie.slackware.com/~alien/slackbuilds/ChangeLog.rss
+   - http://alien.slackbook.org/ktown/ChangeLog.rss
+   - http://alien.slackbook.org/blog/feed/
+   - http://blog.rlworkman.net/
+   - http://blog.hashbangbash.com/
   # A map between the original feed item titles in the XML, and the titles you want to show when rendered.
   # In other words, you can change how the individual feed items are labelled.
   title_map:
-   "Simon Says" : "I blogged:"
-   "Simon Says: Comments" : "Someone commented:"
-   "Uploads from sbwoodside" : "I flickr'd:"
-   "Semacode" : "Semacode blog post:"
-   "Comments on your photostream and/or sets" : "Someone flickr commented:"
-   "Twitter / sbwoodside" : "I twittered:"
+   "SlackBuilds.org" : "SBo Changed:"
+   "AlienBob's packages" : "Changed:"
+   "AlienBob's un-official packages" : "Changed:"
+   "AlienBob" : "blogged:"
+   "rworkman" : "blogged:"
+   "vbatts" : "blogged:"
 
 #development:
 
