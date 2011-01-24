@@ -9,11 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 1) do
+ActiveRecord::Schema.define(:version => 2) do
 
   create_table "cached_feeds", :force => true do |t|
     t.string   "uri",         :limit => 2048
     t.text     "parsed_feed", :limit => 131072
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "links", :force => true do |t|
+    t.string   "title",      :limit => 2048
+    t.string   "uri",        :limit => 2048
+    t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

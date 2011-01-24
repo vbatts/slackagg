@@ -14,6 +14,9 @@ class PortalController < ApplicationController
       render :text => "Done recaching feeds"
     else
       @aggregate = read_cache unless read_fragment({})
+      if params[:limit]
+        @aggregate = @aggregate.take(params[:limit].to_i)
+      end
     end
   end
 

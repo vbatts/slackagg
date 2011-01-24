@@ -1,0 +1,20 @@
+<div id="link-stream">
+<p>
+  <b>Title:</b>
+  <%=h @link.title %>
+</p>
+
+<p>
+  <b>URL:</b>
+  <%=h @link.uri %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%=h @link.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
+</div>

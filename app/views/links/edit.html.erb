@@ -1,0 +1,25 @@
+<div id="link-stream">
+<% form_for(@link) do |f| %>
+  <%= f.error_messages %>
+
+  <% puts f.class %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :uri %><br />
+    <%= f.text_field :uri %>
+  </p>
+  <p>
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @link %> |
+<%= link_to 'Back', links_path %>
+</div>
