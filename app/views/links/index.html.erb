@@ -4,7 +4,7 @@
       lastday = -1
       @links.each do |link| %>
         <div class="link_content">
-          <a target="_blank" href="<%= link[:uri] + '#slackagg' %>"><%= "%s (%s)" % [link[:title], link[:uri]] %></a>
+          <a target="_blank" title="<%= link[:uri] %>" href="<%= link[:uri] + '#slackagg' %>"><%= link[:title] %></a>
         </div>
     <% end %>
   <% end %>
