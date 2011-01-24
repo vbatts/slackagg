@@ -1,0 +1,11 @@
+<div id="link-stream">
+  <% cache do %>
+    <%
+      lastday = -1
+      @links.each do |link| %>
+        <div class="link_content">
+          <a target="_blank" href="<%= link[:uri] + '#slackagg' %>"><%= "%s (%s)" % [link[:title], link[:uri]] %></a>
+        </div>
+    <% end %>
+  <% end %>
+</div>

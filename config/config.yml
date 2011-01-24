@@ -8,6 +8,10 @@ common:
   secret: 0gvMp6Fd
   # The array of feeds you want to aggregate. If you change this then manually delete the whole cache.
   feeds:
+   - http://connie.slackware.com/~vbatts/feeds/slackware64-current_ChangeLog.rss
+   - http://connie.slackware.com/~vbatts/feeds/slackware-current_ChangeLog.rss
+   #- http://connie.slackware.com/~vbatts/feeds/slackware64-13.1_ChangeLog.rss
+   #- http://connie.slackware.com/~vbatts/feeds/slackware-13.1_ChangeLog.rss
    - http://slackbuilds.org/rss/ChangeLog.rss
    - http://connie.slackware.com/~alien/slackbuilds/ChangeLog.rss
    - http://alien.slackbook.org/ktown/ChangeLog.rss
@@ -17,12 +21,17 @@ common:
   # A map between the original feed item titles in the XML, and the titles you want to show when rendered.
   # In other words, you can change how the individual feed items are labelled.
   title_map:
+   "slackware64-current" : "updates"
+   "slackware-current" : "updates"
+   #"slackware64-13.1" : "updates"
+   #"slackware-13.1" : "updates"
    "SlackBuilds.org" : "SBo Changed:"
    "AlienBob's packages" : "Changed:"
    "AlienBob's un-official packages" : "Changed:"
    "AlienBob" : "blogged:"
    "rworkman" : "blogged:"
    "vbatts" : "blogged:"
+  maintainence: false
 
 #development:
 
