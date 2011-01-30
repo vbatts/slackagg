@@ -18,6 +18,7 @@ common:
    - http://alien.slackbook.org/blog/feed/
    - http://blog.rlworkman.net/
    - http://blog.hashbangbash.com/
+   - http://connie.slackware.com/~vbatts/feeds/alphageek-13.1_ChangeLog.rss
   # A map between the original feed item titles in the XML, and the titles you want to show when rendered.
   # In other words, you can change how the individual feed items are labelled.
   title_map:
@@ -31,6 +32,7 @@ common:
    "AlienBob" : "blogged:"
    "rworkman" : "blogged:"
    "vbatts" : "blogged:"
+   "alphageek's packages" : "changed"
   maintainence: false
 
 #development:
