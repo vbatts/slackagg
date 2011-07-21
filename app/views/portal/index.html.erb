@@ -2,7 +2,9 @@
   <% cache do %>
     <%
       lastday = -1
-      @aggregate.each do |item| %>
+
+      @aggregate.each do |item|
+    %>
         <div class="item">
         <%
           mydate = item[:feed_item][:published].getlocal
@@ -12,8 +14,15 @@
           end
         %>
           <div class="item_content">
+            <% begin %>
             <%= item[:feed_title] %>
-            <a href="<%= item[:feed_item][:link] + '#slackagg' %>"><%= item[:feed_item][:title] %></a>
+            <a href="<%= item[:feed_item][:link].to_s + '#slackagg' %>"><%= item[:feed_item][:title] %></a>
+            <% 
+              rescue NoMethodError => ex
+                raise StandardError.new(item.inspect)
+              end
+            %>
+            
           </div>
         </div>
     <% end %>
