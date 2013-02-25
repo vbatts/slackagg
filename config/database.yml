@@ -2,6 +2,10 @@ development:
   adapter: sqlite3
   database: db/development.db
 
+production:
+  adapter: sqlite3
+  database: db/development.db
+
 #login: &login
 #  adapter: mysql
 #  username: simonwoodside

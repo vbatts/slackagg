@@ -17,7 +17,7 @@ common:
    - http://alien.slackbook.org/ktown/ChangeLog.rss
    - http://alien.slackbook.org/blog/feed/
    - http://blog.rlworkman.net/
-   - http://rlworkman.net/pkgs/13.37/ChangeLog.rss
+   - http://rlworkman.net/pkgs/ChangeLog.rss
    - http://blog.hashbangbash.com/
    - http://connie.slackware.com/~vbatts/feeds/alphageek-13.37_ChangeLog.rss
   # A map between the original feed item titles in the XML, and the titles you want to show when rendered.
